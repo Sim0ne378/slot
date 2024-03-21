@@ -1,0 +1,246 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+  }
+  
+  #rezultat {
+    width: 80%;
+    height: 65%;
+    border: 1px solid black;
+    overflow: auto;
+    padding: 10px;
+    display: flex;
+
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+   
+  }
+  
+  table td {
+    border: 1px solid black;
+    padding: 8px;
+    justify-content: center;
+
+  }
+  
+  img {
+    width: 20vh;
+    height: 15vh;
+    position:relative;
+    right:-21px;
+  
+  }
+  .titlu{
+    font-family:Anton;
+    font-size:40px;
+    justify-content:center;
+    align-items: center;
+    display:flex;
+  
+  }
+  .subtitlu{
+    font-size:30px;
+    font-family:Playfair;
+    justify-content:center;
+    align-items: center;
+    display:flex;
+  }
+  .topnav{
+    background-color: rgb(32, 32, 32);
+  }
+  .mt{
+    display:flex;
+    justify-content: center;
+    background-image:url(poza.png);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+  }
+  .credit{
+
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    position:relative;
+   border-right:20px;
+    background-color:transparent;
+    width:10vh;
+    position:relative;
+    right:40px;
+  
+  }
+  .miza{
+   
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    position:relative;
+    background-color:transparent;
+    width:10vh;
+
+  }
+  input{
+    float:right;
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    position:relative;
+    
+    
+  }
+  .mize{width:10%;
+    height:5%;
+    top:310px;
+    background-color: transparent;
+   
+  }
+.castig{font-size:20px;
+  font-family: 'Times New Roman', Times, serif;
+  position:relative;
+  background-color:transparent;
+  width:13vh;
+float:right;
+  }
+  .ros{width:20vh;
+    height:30vh;
+    background-color: red;
+  overflow: hidden;
+  border-style: none;
+  }
+  .neg{width:20vh;
+    height:30vh;
+    background-color:black;
+overflow: hidden;
+border-style:none;
+border-left:20px;
+  }
+  .popup{width:50vh;
+    height:50vh;
+  background-color:#1A1A1A;
+    border-radius:6px;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0.1);
+    text-align:center;
+    padding:0 30px 30px;
+    color:#333;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+  }
+  .popup-open{
+    visibility:visible;
+    top:50%;
+    transform:translate(-50%,-50%) scale(1);
+  }
+ .call{
+  background-color: red;
+ }
+.butonul{
+  height:15vh;
+  width:15vh;
+  align-self: center;
+  float:right;
+  position: relative;
+  top: 100;
+  left: 200px;
+  top: -100;
+  top: -100;
+  bottom: 100px;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: rgba(59, 59, 59, 0.6); 
+  transition: color 2s ease-in-out;
+  transition:background-color 2s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+.butonul:disabled {
+  pointer-events: none;
+}
+.butonul:hover {
+  color: rgba(255, 255, 255, 1); 
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.butonul:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.dublaj{
+  height:15vh;
+  width:15vh;
+  align-self: center;
+  float:right;
+  position: relative;
+  top: -100;
+  left: -10;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: rgba(59, 59, 59, 0.6); 
+  transition:background-color 2s ease-in-out;
+  transition: color 2s ease-in-out;
+  cursor: pointer;
+
+}
+.dublaj:disabled {
+  pointer-events: none;
+}
+.dublaj:hover {
+  color: rgba(255, 255, 255, 1); 
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.dublaj:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.attend{
+  height:15vh;
+  width:15vh;
+  align-self: center;
+  float:right;
+  position: relative;
+  top: -100;
+  left: -10;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: rgba(59, 59, 59, 0.4); 
+  transition: color 2s ease-in-out;
+  transition:background-color 2s ease-in-out;
+  cursor: pointer;
+  
+
+}
+.attend:disabled {
+  pointer-events: none;
+}
+.attend:hover {
+  color: rgba(255, 255, 255, 1); 
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.attend:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.nuj{
+  background-color: transparent;
+}
+

@@ -1,0 +1,90 @@
+<html><head>
+  <title>TheFlagSlots</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="java.js"></script>
+
+</head>
+<body>
+  <div class="topnav">
+    <div class="titlu">__The Flag Slots__</div>
+<br>
+<div class="subtitlu">Countries of the World </div>
+</div>
+<br>
+  <div class="mt"><div id="rezultat"><table><tbody>
+  </colgroup><tr><td><img src="us.jpg"></td><td><img src="japonia.jpg"></td><td><img src="us.jpg"></td><td><img src="italia.jpg"></td><td><img src="rusia.jpg"></td></tr><tr><td><img src="uk.jpg"></td><td><img src="italia.jpg"></td><td><img src="italia.jpg"></td></td><td><img src="romania.jpg"></td><td><img src="us.jpg"></td></tr><tr><td><img src="japonia.jpg"></td><td><img src="suedia.jpg"></td><td><img src="spania.jpg"></td><td><img src="franta.jpg"></td><td><img src="spania.jpg"></td></tr><tr><td><img src="suedia.jpg"></td><td><img src="germania.jpg"></td><td><img src="germania.jpg"></td><td><img src="suedia.jpg"></td><td><img src="romania.jpg"></td></tr></tbody></table></div>
+  <button onclick="generareMatrice()" id="buton" class="butonul">Push</button>
+<div class="credit" id="credit">Credit: </div>
+<div class="mize">
+  <div class="miza" id="miza">Miza:</div>
+<select id="miza1" class="nuj">
+  <option value="0" class="nuj">0</option>
+  <option value="0.1" class="nuj">0.1</option>
+  <option value="0.2" class="nuj">0.2</option>
+  <option value="0.5" class="nuj">0.5</option>
+  <option value="1" class="nuj">1</option>
+  <option value="2" class="nuj">2</option>
+  <option value="5" class="nuj">5</option>
+  <option value="10" class="nuj">10</option>
+  <option value="100" class="nuj">100</option>
+</select></div>
+<label class="castig" id="castig">Ultimul castig 0</label>
+<button type="button" onclick="openPopup()" id="dub" class="dublaj">Dublaj</button>
+<div class="popup popup-open" id="popup">
+  <br>
+  <br><br>
+  <button type="button" id="rosie" class="ros" onclick="rosie()" style="
+    position: relative;
+    left: -5;
+"></button>
+  <button type="button" id="neagra" class="neg" onclick="neagra()" style="
+    position: relative;
+    left: 5px;
+"></button>
+  <br>
+  <button type="button" onclick="closePopup()" id="sub" style="
+    position: relative;
+    top: 10px;
+">Inchide</button>
+  <br><br>
+  <label id="rand"></label>
+  <br>
+</div>
+<script>
+    
+let popup=document.getElementById("popup");
+  function openPopup(){
+    popup.classList.add("popup-open");
+  }
+  function closePopup() {
+  popup.classList.remove("popup-open");
+  document.getElementById("rand").innerHTML=" ";
+}
+
+  </script>
+
+
+</div>
+<button type="button" onclick="openCall()" class="attend">Call attendant</button>
+<div class="popup popup-open" id="call">
+  <form action="http://localhost/conect.php" method="post">
+  <br><br>
+  <h2><label id="high"></label></h2>
+  <input type="hidden" name="high" id="numarHidden" value="">
+  <br>
+  <input type="text"  id="nume" name="nume">
+  <button type="submit" onclick="haide()">Scoate</button></form>
+  <button type="submit" onclick="closeCall()" style="
+    position: relative;
+    top: 10px;
+">Inchide</button>
+</div>
+<script>
+    
+    let call=document.getElementById("call");
+  function openCall(){
+    call.classList.add("popup-open");
+  }
+  
+    </script>
+</body></html>
